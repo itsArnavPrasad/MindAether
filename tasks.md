@@ -47,6 +47,8 @@
 ### 3.2 NER & Relation Extraction
  - Use spaCy for entity recognition
 
+ - Optional : Integrate a local finetuned LLM
+ 
  - Extract subject-relation-object triples for graph
 
 ### 3.3 Metadata Extractor
