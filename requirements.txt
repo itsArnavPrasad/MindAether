@@ -1,0 +1,14 @@
+streamlit
+typer
+pytesseract
+sentence-transformers
+networkx
+faiss-cpu
+pyvis
+spacy
+pdfminer.six
+python-docx
+PyMuPDF
+llama-cpp-python
+python-magic
+
