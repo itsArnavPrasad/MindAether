@@ -41,9 +41,12 @@ if submit and query:
 
 # --- Graph Visualization ---
 st.header("🌐 Knowledge Graph Viewer")
-graph_html_path = Path("graphs/graph.html")  # Pyvis should export to this path
+
+graph_html_path = Path("graphs/graph.html")
 
 if graph_html_path.exists():
-    st.components.v1.iframe(str(graph_html_path), height=600, scrolling=True)
+    with open("graphs/graph.html", "r", encoding="utf-8") as f:
+        html = f.read()
+    st.components.v1.html(html, height=600, scrolling=True)
 else:
     st.info("Graph not generated yet. Upload files and build the graph to view it here.")
